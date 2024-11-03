@@ -21,7 +21,7 @@ $(document).ready(function() {
         const address = $("#address").val();
         
         if (name && address) {
-            alert(`Order submitted!\nName: ${name}\nAddress: ${address}\nTotal: $${totalPrice}`);
+            alert(`訂單已提交！\n姓名: ${name}\n地址: ${address}\n總金額: $${totalPrice}`);
             // 重置購物車和表單
             $("#cart-items").empty();
             $("#total-price").text(0);
@@ -30,7 +30,8 @@ $(document).ready(function() {
             $("#address").val('');
             totalPrice = 0;
         } else {
-            alert("Please fill in all fields.");
+            alert("請填寫所有欄位。");
         }
     });
 });
+
