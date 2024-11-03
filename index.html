@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <h1>~吉伊卡哇的小世界~</h1>
+        <h1>~ちいかわの小さな世界~</h1>
     </header>
 
     <main>
@@ -25,7 +25,6 @@
             <h2>小八</h2>
             <p>Price: $250</p>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
         </div>
         <div class="product" data-name="烏薩奇" data-price="250">
             <img src="https://img.alicdn.com/imgextra/i2/2178390619/O1CN01gBIu3J1GRY7oYWmFD_!!2178390619.jpg" alt="烏薩奇">
@@ -45,6 +44,16 @@
             <h2>Checkout</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method">
+                <option value="cash-on-delivery">Cash on Delivery</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
             <label for="address">Address:</label>
             <input type="text" id="address" required>
             <button id="submit-order">Submit Order</button>
@@ -58,4 +67,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
