@@ -16,10 +16,12 @@ header {
 .product {
     background: #fff;
     border: 1px solid #ddd;
+    border-radius: 5px; /* 增加圓角 */
     margin: 10px 0;
     padding: 10px;
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
 }
 
 .product img {
@@ -49,6 +51,8 @@ button:hover {
     background: #fff;
     padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 5px; /* 增加圓角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
 }
 
 #checkout-form {
@@ -56,6 +60,9 @@ button:hover {
     background: #fff;
     padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 5px; /* 增加圓角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
 }
+
 
 
