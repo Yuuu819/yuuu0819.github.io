@@ -14,20 +14,40 @@
     </header>
 
     <main>
-        <div class="product" data-name="Product 1" data-price="10">
-            <h2>Product 1</h2>
-            <p>Price: $10</p>
+        <div class="product" data-name="吉伊" data-price="250">
+            <img src="https://cdn.store-assets.com/s/1268729/i/73122807.jpg?width=1024" alt="吉伊">
+            <h2>吉伊</h2>
+            <p>Price: $250</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="product" data-name="Product 2" data-price="20">
-            <h2>Product 2</h2>
-            <p>Price: $20</p>
+        <div class="product" data-name="小八" data-price="250">
+            <img src="https://shoplineimg.com/5c895a4e7f65960001080f83/667011c3026d73001fc3d9bd/800x.jpg?" alt="小八">
+            <h2>小八</h2>
+            <p>Price: $250</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
+        </div>
+        <div class="product" data-name="烏薩奇" data-price="250">
+            <img src="https://img.alicdn.com/imgextra/i2/2178390619/O1CN01gBIu3J1GRY7oYWmFD_!!2178390619.jpg" alt="烏薩奇">
+            <h2>烏薩奇</h2>
+            <p>Price: $250</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
         <div id="cart">
             <h2>Shopping Cart</h2>
             <ul id="cart-items"></ul>
             <p>Total: $<span id="total-price">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+
+        <div id="checkout-form" style="display:none;">
+            <h2>Checkout</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <button id="submit-order">Submit Order</button>
         </div>
     </main>
 
@@ -38,3 +58,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
