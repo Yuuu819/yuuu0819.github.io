@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* 淡藍色背景 */
+    color: #003366; /* 深藍色字體 */
 }
 
 header {
@@ -24,7 +25,7 @@ header {
 .product img {
     width: 100px;  /* 統一寬度 */
     height: 100px; /* 統一高度 */
-    object-fit: cover; /* 保持比例，並填充容器 */
+    object-fit: cover; /* 保持比例 */
     margin-right: 10px;
 }
 
@@ -32,6 +33,15 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+    background-color: white; /* 按鈕背景白色 */
+    border: 2px solid #003366; /* 深藍色邊框 */
+    border-radius: 50px; /* 圓形按鈕 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑過渡 */
+}
+
+button:hover {
+    background-color: #003366; /* 懸停時背景變深藍色 */
+    color: white; /* 字體顏色變為白色 */
 }
 
 #cart {
@@ -47,4 +57,5 @@ button {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
 
