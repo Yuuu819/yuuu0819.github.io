@@ -18,15 +18,19 @@ $(document).ready(function() {
 
     $("#submit-order").click(function() {
         const name = $("#name").val();
+        const phone = $("#phone").val();
+        const paymentMethod = $("#payment-method").val();
         const address = $("#address").val();
         
-        if (name && address) {
-            alert(`訂單已提交！\n姓名: ${name}\n地址: ${address}\n總金額: $${totalPrice}`);
+        if (name && phone && address) {
+            alert(`訂單已提交！\n姓名: ${name}\n電話: ${phone}\n支付方式: ${paymentMethod}\n地址: ${address}\n總金額: $${totalPrice}`);
             // 重置購物車和表單
             $("#cart-items").empty();
             $("#total-price").text(0);
             $("#checkout-form").hide();
             $("#name").val('');
+            $("#phone").val('');
+            $("#payment-method").val('cash-on-delivery');
             $("#address").val('');
             totalPrice = 0;
         } else {
@@ -34,4 +38,5 @@ $(document).ready(function() {
         }
     });
 });
+
 
